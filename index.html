@@ -5,19 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>CSS Selectors</h1>
     <table>
         <thead>
-            <th> Name </th>
+            <th> Selector </th>
             <th> Tag </th>
             <th> Description </th>
         </thead>
         <tbody>
             <tr>
                 <td> Type </td>
-                <td>  </td>
+                <td class='sample-code'> article {} </td>
+                <td> You can select a type of HTML tag by simply writing the tag. </td>
+            </tr>
+            <tr>
+                <td> Class </td>
+                <td class='sample-code'> .content {} </td>
+                <td> Select a html class by prepending a . to the beginning. </td>
+            </tr>
+            <tr>
+                <td> ID </td>
+                <td class='sample-code'> #unique-ID </td>
+                <td> An ID attribute can be selected by prepending a # to the beginning. </td>
+            </tr>
+            <tr>
+                <td> Chaining Selectors </td>
+                <td class='sample-code'> article.content {} </td>
+                <td> You can chain selectors to be more specific in applying a CSS rule. The example shown here will only apply the rule to items with a class of "content" that also have an "article" tag. </td>
+            </tr>
+            <tr>
+                <td> CSS Descendant </td>
+                <td class='sample-code'> article h2 </td>
+                <td> This will only style "h2" elements that are descendants of an article tag. </td>
+            </tr>
+            <tr>
+                <td> Multiple CSS Selectors </td>
+                <td class='sample-code'> article, h2, .content {}  </td>
+                <td> You can use multiple CSS selectors for the same rule by separating the selectors with commas. </td>
             </tr>
         </tbody>
     </table>

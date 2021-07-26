@@ -1,0 +1,22 @@
+body {
+    background-color:lightsteelblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sample-code {
+    font-family: monospace;
+    background-color: gainsboro;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+table {
+    max-width: 800px;
+}
+
+th {
+    background-color: khaki;
+}
